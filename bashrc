@@ -104,4 +104,6 @@ fi
 
 export NVM_DIR="/home/jharvard/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# laravel path pointing
 export PATH="$PATH:~/.composer/vendor/bin"
