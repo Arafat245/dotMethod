@@ -3,3 +3,8 @@
 
 set editing-mode vi
 set keymap vi
+# An extremly handy tool :: Incremental history searching
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
