@@ -19,13 +19,16 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias dist-upgrade='sudo apt-get dist-upgrade'
 
-#all at once
+# all at once
 alias pullall='update ; upgrade ; time dist-upgrade'
 
-# linking personalized ~/.bash_profile with ~/.bashrc
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
-fi
+# git command aliases
+alias gita="git add"
+alias gitc="git commit"
+alias gits="git status"
+alias gitl="git log"
+alias gitush="git push origin master"
+alias gitull="git pull origin master"
 
 
 # custom configuration
@@ -74,3 +77,10 @@ fi
 #
 # # SPL for pset3
 # export CLASSPATH=.:/usr/lib/spl.jar
+
+# linking personalized ~/.bash_profile with ~/.bashrc
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
+
