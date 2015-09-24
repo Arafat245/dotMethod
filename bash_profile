@@ -3,10 +3,13 @@
 export CXX=clang++
 export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libstdc++ -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
 
- # Custom aliases folder dir
+# Custom aliases folder dir
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
 alias github="cd ~/Dropbox/FUNProgramming/"
 alias apublic="cd ~/vhosts/localhost/public/"
+
+# my nootbook
+alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
 
 # My aliases
 alias v="vim"
@@ -30,7 +33,6 @@ alias gitl="git log"
 alias gitush="git push origin master"
 alias gitull="git pull origin master"
 
-
 # custom configuration
 
 # # configure prompt
@@ -39,8 +41,7 @@ alias gitull="git pull origin master"
 # fi
 #
 # # if not root
-# if [[ $UID -ne 0 ]]; then
-#
+# if [ "$(id -u)" != "0" ]; then
 #   # set umask
 #   umask 0077
 #
