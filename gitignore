@@ -1,0 +1,31 @@
+.hgignore
+node_module
+.DS_Store
+Thumbs.db
+
+# C/C++
+*.slo
+*.lo
+*.o
+*.so
+*.dylib
+*.lai
+*.la
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+install_manifest.txt
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+
+# Python
+*.py[cod]
+.installed.cfg
+__pycache__
+pip-log.txt
+.coverage
+.tox
+nosetests.xml

@@ -35,49 +35,53 @@ alias gitull="git pull origin master"
 
 # custom configuration
 
-# # configure prompt
-# if [ "$PS1" ]; then
-#   export PS1="\[\e[0;32m\]\u@\h\[\e[0m\] (\w): "
-# fi
-#
-# # if not root
-# if [ "$(id -u)" != "0" ]; then
-#   # set umask
-#   umask 0077
-#
-#   # configure clang
-#   export CC=clang
-#   export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
-#   export LDLIBS="-lcs50 -lm"
-#
-#   # configure man
-#   export MANSECT="3,2,1"
-#
-#   # protect user
-#   alias cp="cp -i"
-#   alias mv="mv -i"
-#   alias rm="rm -i"
-#
-#   # convenience
-#   alias ll="ls -l --color=auto"
-#   alias gdb="gdb -q"
-#
-#   # allow core dumps
-#   ulimit -c unlimited
-#
-# fi
-#
-# # set editor
-# export EDITOR=vim
-#
-# # set locale
-# export LANG=C
-#
-# # Node.js
-# export NODE_ENV=dev
-#
-# # SPL for pset3
-# export CLASSPATH=.:/usr/lib/spl.jar
+# If not running interactively, don't do anything else
+[ -z "$PS1" ] && return
+
+# configure prompt
+if [ "$PS1" ]; then
+  export PS1="\[\e[0;32m\]\u@\[\e[0;33m\]\h\[\e[0;34m\](\w):\[\e[0m\] "
+    # export PS1="\[\e[0;32m\]\u@\h\[\e[0m\] :\[\e[0;34m\]\w[\e[0m\] $"
+fi
+
+# if not root
+if [ "$(id -u)" != "0" ]; then
+  # set umask
+  umask 0077
+
+  # configure clang
+  export CC=clang
+  export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
+  export LDLIBS="-lcs50 -lm"
+
+  # configure man
+  export MANSECT="3,2,1"
+
+  # protect user
+  alias cp="cp -i"
+  alias mv="mv -i"
+  alias rm="rm -i"
+
+  # convenience
+  alias ll="ls -l --color=auto"
+  alias gdb="gdb -q"
+
+  # allow core dumps
+  ulimit -c unlimited
+
+fi
+
+# set editor
+export EDITOR=vim
+
+# set locale
+export LANG=C
+
+# Node.js
+export NODE_ENV=dev
+
+# SPL for pset3
+export CLASSPATH=.:/usr/lib/spl.jar
 
 # linking personalized ~/.bash_profile with ~/.bashrc
 if [ -f ~/.bashrc ]; then

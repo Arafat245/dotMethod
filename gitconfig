@@ -1,0 +1,11 @@
+[user]
+	email = emrulhasanzawad@outlook.com
+	name = ehzShelter
+[push]
+	default = simple
+[core]
+    editor = vim
+    whitespace = off
+	excludesfile = ~/.gitignore
+[color]
+    ui = true
