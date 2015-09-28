@@ -40,7 +40,7 @@ alias gitull="git pull origin master"
 
 # configure prompt
 if [ "$PS1" ]; then
-  export PS1="\[\e[0;32m\]\u@\[\e[0;32m\]\h\[\e[0;34m\](\w):\[\e[0m\] "
+  export PS1="\[\e[0;42m\]\u@\[\e[0;42m\]\h\[\e[0;34m\](\w):\[\e[0m\] "
 fi
 
 # if not root
