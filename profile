@@ -21,5 +21,3 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# setting NPM
-export PATH=~/.npm-global/bin:$PATH
