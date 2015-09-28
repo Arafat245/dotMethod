@@ -21,4 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2f9b8c6db79b84d7189615c2a28ad3af5ae6b207
