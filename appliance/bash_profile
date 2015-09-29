@@ -1,4 +1,3 @@
-
 # configure clang++
 export CXX=clang++
 export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libstdc++ -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
@@ -7,6 +6,8 @@ export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libstdc++ -pedantic-errors -Wextr
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
 alias github="cd ~/Dropbox/FUNProgramming/"
 alias apublic="cd ~/vhosts/localhost/public/"
+
+alias sap="sudo apt-get"
 
 # my nootbook
 alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
@@ -38,10 +39,38 @@ alias gitull="git pull origin master"
 # If not running interactively, don't do anything else
 [ -z "$PS1" ] && return
 
-# configure prompt
-if [ "$PS1" ]; then
-  export PS1="\[\e[0;42m\]\u@\[\e[0;42m\]\h\[\e[0;34m\](\w):\[\e[0m\] "
-fi
+PS1='\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\](\w):\[\e[0m\]$(__git_ps1 "(%s)") '
+
+# If this is an xterm set the title to user@host(dir):
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# # configure prompt tail working directory
+# if [ "$PS1" ]; then
+#   export PS1="\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\](\W):\[\e[0m\] "
+# fi
+
+# # configure prompt present working directory
+# if [ "$PS1" ]; then
+#   export PS1="\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\](\w):\[\e[0m\] "
+# fi
+
+# # Advanced configure prompt
+# if [ "$PS1" ]; then
+#   export PS1="\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\]($MYPS):\[\e[0m\] "
+# fi
+#
+# # complex sed and awk
+# export MYPS='$(echo -n "${PWD/#$HOME/~}" | awk -F "/" '"'"'{
+# if (length($0) > 14) { if (NF>4) print $1 "/" $2 "/.../" $(NF-1) "/" $NF;
+# else if (NF>3) print $1 "/" $2 "/.../" $NF;
+# else print $1 "/.../" $NF; }
+# else print $0;}'"'"')'
 
 # if not root
 if [ "$(id -u)" != "0" ]; then
@@ -85,4 +114,9 @@ export CLASSPATH=.:/usr/lib/spl.jar
 # linking personalized ~/.bash_profile with ~/.bashrc
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
+fi
+
+# git bash completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
 fi
