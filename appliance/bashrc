@@ -107,3 +107,5 @@ export NVM_DIR="/home/jharvard/.nvm"
 
 # laravel path pointing
 export PATH="$PATH:~/.composer/vendor/bin"
+	# OPAM configuration
+	. /home/jharvard/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

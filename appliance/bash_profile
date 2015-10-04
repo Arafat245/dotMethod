@@ -6,6 +6,14 @@ export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libstdc++ -pedantic-errors -Wextr
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
 alias github="cd ~/Dropbox/FUNProgramming/"
 alias apublic="cd ~/vhosts/localhost/public/"
+alias metacpp="cd ~/Dropbox/metadata/cppDeitel/Code_Examples"
+alias ..="cd .."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+
 
 alias sap="sudo apt-get"
 
@@ -120,3 +128,6 @@ fi
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# OPAM configuration
+. /home/jharvard/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
