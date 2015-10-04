@@ -7,11 +7,6 @@ alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
 alias github="cd ~/Dropbox/FUNProgramming/"
 alias apublic="cd ~/vhosts/localhost/public/"
 alias metacpp="cd ~/Dropbox/metadata/cppDeitel/Code_Examples"
-alias ..="cd .."
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 
 
 
