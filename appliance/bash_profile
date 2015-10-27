@@ -1,6 +1,11 @@
 # configure clang++
 export CXX=clang++
-export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libstdc++ -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
+export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Ofast -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -fsanitize=address -fsanitize=undefined -lpthread -l:libmagic.so.1"
+
+alias cxx="clang++ -ggdb3 -O0 -std=c++11 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Ofast -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -fsanitize=address -fsanitize=undefined -lpthread -l:libmagic.so.1"
+
+alias cc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
+
 
 # Custom aliases folder dir
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
@@ -8,16 +13,7 @@ alias github="cd ~/Dropbox/FUNProgramming/"
 alias apublic="cd ~/vhosts/localhost/public/"
 alias metacpp="cd ~/Dropbox/metadata/cppDeitel/Code_Examples"
 
-alias vrc='vim ~/.vimrc'
 alias sap="sudo apt-get"
-
-# Idiot proofing :)
-alias mv='mv -iv'
-alias cp='cp -iv'
-alias rm='rm -iv'
-alias df='df -h'
-alias du='du -h'
-alias mkdir='mkdir -p'
 
 # my nootbook
 alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
@@ -37,7 +33,7 @@ alias dist-upgrade='sudo apt-get dist-upgrade'
 alias pullall='update ; upgrade ; time dist-upgrade'
 
 # git command aliases
-alias gita="git add . --ignore-removal"
+alias gita="git add"
 alias gitc="git commit"
 alias gits="git status"
 alias gitl="git log"
