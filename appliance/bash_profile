@@ -13,7 +13,8 @@ alias github="cd ~/Dropbox/FUNProgramming/"
 alias apublic="cd ~/vhosts/localhost/public/"
 alias metacpp="cd ~/Dropbox/metadata/cppDeitel/Code_Examples"
 
-alias sap="sudo apt-get"
+alias sag="sudo apt-get"
+alias update50="pullall"
 
 # my nootbook
 alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
@@ -45,7 +46,7 @@ alias gitull="git pull origin master"
 # If not running interactively, don't do anything else
 [ -z "$PS1" ] && return
 
-PS1='\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\](\w):\[\e[0m\]$(__git_ps1 "(%s)") '
+PS1='\[\e[0;37m\]\u@\[\e[0;37m\]\h\[\e[0;34m\](\W):\[\e[0m\]$(__git_ps1 "(%s)") '
 
 # If this is an xterm set the title to user@host(dir):
 case "$TERM" in
