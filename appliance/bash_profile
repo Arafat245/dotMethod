@@ -2,15 +2,16 @@ source ~/.profile
 
 # configure clang++
 export CXX=clang++
-export CXXFLAGS="-ggdb3 -O0 -std=c++11 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
+export CXXFLAGS="-ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
 
-alias cxx="clang++ -ggdb3 -O0 -std=c++11 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
+alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
 
 alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
 
 # gcc or g++ compiler
 alias gcc="gcc -O0 -g -std=c11 -Wall -Wextra -Wshadow -pedantic –Werror"
-alias gpp="g++ -O0 -g -std=c++11 -Wall -Wextra -Wshadow -pedantic -Weffc++ -Werror"
+# for effective C++ optimization
+alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -Werror -fdiagnostics-color=always -l sqlite3"
 
 # Custom aliases folder dir
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
@@ -25,6 +26,7 @@ alias update50="pullall"
 alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
 
 # My aliases
+alias sqlite="sqlite3"
 alias v="vim"
 alias t="tmux"
 alias vinp="vim --noplugin"
