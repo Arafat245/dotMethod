@@ -11,7 +11,7 @@ alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
 # gcc or g++ compiler
 alias gcc="gcc -O0 -g -std=c11 -Wall -Wextra -Wshadow -pedantic –Werror"
 # for effective C++ optimization
-alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -Werror -fdiagnostics-color=always -l sqlite3"
+alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -fdiagnostics-color=always -l sqlite3"
 
 # Custom aliases folder dir
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
