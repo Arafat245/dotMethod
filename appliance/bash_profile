@@ -9,7 +9,7 @@ alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-
 alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
 
 # gcc or g++ compiler
-alias gcc="gcc -O0 -g -std=c11 -Wall -Wextra -Wshadow -pedantic –Werror"
+alias gcc="gcc -O0 -g -std=c11 -Wall -Wextra -Wshadow -pedantic -Werror"
 # for effective C++ optimization
 alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -fdiagnostics-color=always -l sqlite3"
 
@@ -53,7 +53,7 @@ alias gitull="git pull origin master"
 # If not running interactively, don't do anything else
 [ -z "$PS1" ] && return
 
-PS1='\[\e[0;37m\]\u@\[\e[0;37m\]\h\[\e[0;34m\](\W):\[\e[0m\]$(__git_ps1 "(%s)") '
+PS1='\[\e[0;37m\]\u@\[\e[0;37m\]\h\[\e[0;35m\](\w):\[\e[0m\]$(__git_ps1 "(%s)") '
 
 # If this is an xterm set the title to user@host(dir):
 case "$TERM" in
@@ -135,7 +135,3 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-# OPAM configuration
-. /home/jharvard/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
