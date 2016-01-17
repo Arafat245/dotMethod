@@ -122,3 +122,7 @@ fi
 
 export PATH=$PATH:$HOME/.npm/bin
 export NODE_PATH=$NODE_PATH:$HOME/.npm/lib/node_modules
+
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"

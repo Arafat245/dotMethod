@@ -16,8 +16,9 @@ alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -fdia
 # Custom aliases folder dir
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
 alias github="cd ~/Dropbox/FUNProgramming/"
-alias apublic="cd ~/vhosts/localhost/public/"
+# alias apublic="cd ~/vhosts/localhost/public/"
 alias metacpp="cd ~/Dropbox/metadata/cppDeitel/Code_Examples"
+alias free="free -h"
 
 alias sag="sudo apt-get"
 alias update50="pullall"
