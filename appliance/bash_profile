@@ -88,8 +88,8 @@ esac
 # else print $0;}'"'"')'
 
 # if not root
-if [ "$(id -u)" != "0" ]; then
-  # set umask
+# if [ "$(id -u)" != "0" ]; then
+#   # set umask
   umask 0077
 
   # configure clang
@@ -112,7 +112,7 @@ if [ "$(id -u)" != "0" ]; then
   # allow core dumps
   ulimit -c unlimited
 
-fi
+# fi
 
 # set editor
 export EDITOR=vim
