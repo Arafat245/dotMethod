@@ -31,8 +31,10 @@ alias sqlite="sqlite3"
 alias v="vim"
 alias t="tmux"
 alias vinp="vim --noplugin"
+alias vinn="vim -u NONE"
 alias c="clear"
 alias python="python3"
+alias pip="pip3"
 
 # Updating process
 alias update='sudo apt-get update'
@@ -91,13 +93,14 @@ esac
  # set umask
 umask 0077
 
-# configure clang
-export CC=clang
-export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
-export LDLIBS="-lcs -lcs50 -lm"
-
 # configure man
 export MANSECT="3,2,1"
+
+# Warning...Can cause trouble when compile system software
+# # configure clang
+# export CC=clang
+# export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
+# export LDLIBS="-lcs -lcs50 -lm"
 
 # protect user
 alias cp="cp -i"
@@ -123,4 +126,4 @@ fi
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
-
+export CLASSPATH=.:/usr/lib/spl.jar
