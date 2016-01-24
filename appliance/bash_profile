@@ -1,12 +1,8 @@
 source ~/.profile
 
-# configure clang++
-export CXX=clang++
-export CXXFLAGS="-ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
-
 alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
 
-alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
+alias ccc="clang -ggdb3 -O0 -std=c11 -lcs -Wall -Werror -pedantic-errors"
 
 # gcc or g++ compiler
 alias gcc="gcc -O0 -g -std=c11 -Wall -Wextra -Wshadow -pedantic -Werror"
@@ -97,10 +93,6 @@ umask 0077
 export MANSECT="3,2,1"
 
 # Warning...Can cause trouble when compile system software
-# # configure clang
-# export CC=clang
-# export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
-# export LDLIBS="-lcs -lcs50 -lm"
 
 # protect user
 alias cp="cp -i"
