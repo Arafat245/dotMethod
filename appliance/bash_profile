@@ -1,5 +1,14 @@
 source ~/.profile
 
+# alias for clang toolchain
+
+alias clang='clang-3.7'
+alias clang++='clang++-3.7'
+alias clang-check='clang-check-3.7'
+alias clang-format='clang-format-3.7'
+alias clang-modernize='clang-modernize-3.7'
+alias clang-tidy='clang-tidy-3.7'
+
 alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
 
 alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
@@ -38,7 +47,8 @@ alias upgrade='sudo apt-get upgrade'
 alias dist-upgrade='sudo apt-get dist-upgrade'
 
 # all at once
-alias pullall='update ; upgrade ; time dist-upgrade'
+alias pullall='update ; upgrade ; time dist-upgrade -y'
+alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
 
 # git command aliases
 alias gita="git add"

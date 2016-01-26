@@ -104,7 +104,7 @@ fi
 
 export CC=clang
 export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
-export LDLIBS="-lcs -lcs50 -lm"
+export LDLIBS="-lcs50 -lm"
 
 # configure clang++
 export CXX=clang++
@@ -115,7 +115,7 @@ function reSetting()
 # c11
 export CC=clang
 export CFLAGS="-ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
-export LDLIBS="-lcs -lcs50 -lm"
+export LDLIBS="-lcs50 -lm"
 
 # configure clang++
 export CXX=clang++
@@ -142,8 +142,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 
 # color for vim script
