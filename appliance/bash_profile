@@ -2,12 +2,12 @@ source ~/.profile
 
 # alias for clang toolchain
 
+
+alias mysql='mysql -u root -p'
+
 alias clang='clang-3.7'
 alias clang++='clang++-3.7'
-alias clang-check='clang-check-3.7'
 alias clang-format='clang-format-3.7'
-alias clang-modernize='clang-modernize-3.7'
-alias clang-tidy='clang-tidy-3.7'
 
 alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
 
