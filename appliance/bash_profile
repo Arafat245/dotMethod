@@ -7,7 +7,7 @@ alias mysql='mysql -u root -p'
 
 alias clang-format='clang-format-3.6'
 
-alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1 -l sqlite3"
+alias cxx="clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
 
 alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
 
@@ -15,6 +15,7 @@ alias ccc="clang -ggdb3 -O0 -std=c11 -Wall -Werror -pedantic-errors"
 alias gcc="gcc -O0 -g -std=c11 -Wall -Wextra -Wshadow -pedantic -Werror"
 # for effective C++ optimization
 alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -fdiagnostics-color=always -l sqlite3"
+alias gxx="g++ -O0 -g -std=c++14 -Wall -Wextra -Wshadow -pedantic -Weffc++ -fdiagnostics-color=always"
 
 # Custom aliases folder dir
 alias author="cd ~/Dropbox/FUNProgramming/ehz_notebook"
