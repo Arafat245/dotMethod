@@ -1,6 +1,15 @@
 source ~/.profile
 
 # alias for clang toolchain
+# Make sure to run mkdir     "${HOME}/.npm-packages"
+
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+PATH="$NPM_PACKAGES/bin:$PATH"
+
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 
 alias mysql='mysql -u root -p'
@@ -83,17 +92,6 @@ esac
 #   export PS1="\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\](\w):\[\e[0m\] "
 # fi
 
-# # Advanced configure prompt
-# if [ "$PS1" ]; then
-#   export PS1="\[\e[0;46m\]\u@\[\e[0;46m\]\h\[\e[0;34m\]($MYPS):\[\e[0m\] "
-# fi
-#
-# # complex sed and awk
-# export MYPS='$(echo -n "${PWD/#$HOME/~}" | awk -F "/" '"'"'{
-# if (length($0) > 14) { if (NF>4) print $1 "/" $2 "/.../" $(NF-1) "/" $NF;
-# else if (NF>3) print $1 "/" $2 "/.../" $NF;
-# else print $1 "/.../" $NF; }
-# else print $0;}'"'"')'
 
  # set umask
 umask 0077
@@ -128,3 +126,4 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 export CLASSPATH=.:/usr/lib/spl.jar
+
