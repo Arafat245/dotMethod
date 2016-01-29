@@ -22,6 +22,8 @@ echo Downloaded
 
 cd ~/.dotMethod/appliance/
 
+echo copying all dot file
+
 cp bashrc ~/.bashrc
 cp bash_profile ~/.bash_profile
 cp git-completion.bash ~/.git-completion.bash
@@ -35,8 +37,12 @@ cp profile ~/.profile
 cp clang-format ~/.clang-format
 cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
-sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
 
+sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
+sudo cd /usr/share/xfce4/terminal/colorschemes/
+sudo chmod a+r Smyck.theme
+
+rm -rf ~/.dotMethod
 
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
 
