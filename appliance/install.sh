@@ -17,7 +17,8 @@ echo
 echo Downloading and installing...
 mkdir -p ~/.dotMethod
 
-git clone https://github.com/ehzShelter/dotMethod/ ~/.dotMethod
+git clone https://github.com/ehzShelter/dotMethod.git ~/.dotMethod
+echo Downloaded
 
 cd ~/.dotMethod/appliance/
 
