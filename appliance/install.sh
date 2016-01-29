@@ -39,8 +39,7 @@ cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
 
 sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
-sudo cd /usr/share/xfce4/terminal/colorschemes/
-sudo chmod a+r Smyck.theme
+sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
 
 rm -rf ~/.dotMethod
 
