@@ -2,6 +2,8 @@
 
 set -e
 
+rm -rf ~/.dotMethod
+
 echo This bash script will download and install the vim from http://github.com/ehzShelter/dotMethod.
 read -p "Is that okay? [Yn] " confirm
 
@@ -38,7 +40,9 @@ cp clang-format ~/.clang-format
 cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
 
-sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
+cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
+sudo !!
+
 sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
 
 rm -rf ~/.dotMethod
