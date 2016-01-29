@@ -2,8 +2,6 @@
 
 set -e
 
-rm -rf ~/.dotMethod
-
 echo This bash script will download and install the vim from http://github.com/ehzShelter/dotMethod.
 read -p "Is that okay? [Yn] " confirm
 
