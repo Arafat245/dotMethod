@@ -43,7 +43,5 @@ sudo !!
 
 sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
 
-rm -rf ~/.dotMethod
-
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
 
