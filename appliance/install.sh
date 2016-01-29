@@ -17,7 +17,7 @@ echo
 echo Downloading and installing...
 mkdir -p ~/.dotMethod
 
-git clone --quiet https://github.com/ehzShelter/vimMethod ~/.dotMethod
+git clone https://github.com/ehzShelter/vimMethod ~/.dotMethod
 
 cd ~/.dotMethod/appliance/
 
