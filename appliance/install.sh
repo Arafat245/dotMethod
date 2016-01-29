@@ -28,6 +28,14 @@ cp git-completion.bash ~/.git-completion.bash
 cp gvimrc ~/.gvimrc
 cp gitignore ~/.gitignore
 cp gitconfig ~/.gitconfig
+cp jscsrc  ~/.jscsrc
+cp jslintrc ~/.jslintrc
+cp jshintrc ~/.jshintrc
+cp profile ~/.profile
+cp clang-format ~/.clang-format
+cp tmux.conf ~/.tmux.conf
+cp inputrc ~/.inputrc
+sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
 
 
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
