@@ -1,1 +1,1 @@
-{"name":"Dotmethod","tagline":"bash","body":"## this is . dot files for productivity\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
+{"name":"Dotmethod","tagline":"bash","body":"### Install my dot file all at once\r\n## Tested on Xubuntu Xfce\r\n## this is . dot files for productivity\r\n\r\n    bash < <(curl --silent https://raw.githubusercontent.com/ehzShelter/dotMethod/master/appliance/install.sh)\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
