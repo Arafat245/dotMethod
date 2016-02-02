@@ -47,22 +47,4 @@ echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
 
 echo -e "Now Downloading CS50 C library"
 
-sudo su -
-
-apt-get install gcc
-wget http://mirror.cs50.net/library50/c/library50-c-5.zip
-unzip library50-c-5.zip
-rm -f library50-c-5.zip
-cd library50-c-5
-gcc -c -ggdb -std=c11 cs50.c -o cs50.o
-ar rcs libcs50.a cs50.o
-chmod 0644 cs50.h libcs50.a
-mkdir -p /usr/local/include
-chmod 0755 /usr/local/include
-mv -f cs50.h /usr/local/include
-mkdir -p /usr/local/lib
-chmod 0755 /usr/local/lib
-mv -f libcs50.a /usr/local/lib
-cd ..
-rm -rf library50-c-5
 

@@ -3,9 +3,11 @@ source ~/.profile
 # alias for clang toolchain
 # Make sure to run mkdir     "${HOME}/.npm-packages"
 
+
 NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
+
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
@@ -46,8 +48,6 @@ alias t="tmux"
 alias vinp="vim --noplugin"
 alias vinn="vim -u NONE"
 alias c="clear"
-alias python="python3"
-alias pip="pip3"
 
 # Updating process
 alias update='sudo apt-get update'
