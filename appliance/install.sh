@@ -45,6 +45,6 @@ sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
 
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
 
-echo -e "Now Downloading CS50 C library"
+e
 
 
