@@ -257,3 +257,7 @@ bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
 
 set blink-matching-paren on
+# Make sure to make .virtualenvs
+
+export PIP_VIRTUALENV_BASE=/home/ehz/.virtualenvs
+export PIP_VIRTUALENV_BASE=/home/ehz/.virtualenvs

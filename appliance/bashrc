@@ -161,3 +161,21 @@ fi
 
 # OCLINT_HOME="/home/shelter/.oclint/build/oclint-0.10.2/"
 # export PATH=$OCLINT_HOME/bin:$PATH
+
+# pip bash completion start
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 ) )
+}
+complete -o default -F _pip_completion pip
+# pip bash completion end
+
+
+# Make sure to make .virtualenvs
+export WORKON_HOME=/home/ehz/.virtualenvs
+export PIP_VIRTUALENV_BASE=/home/ehz/.virtualenvs
+
+
+
