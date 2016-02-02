@@ -122,14 +122,12 @@ export CXX=clang++
 export CXXFLAGS="-ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
 }
 
-
 function defaultSetting()
 {
 #
 export CC=gcc
 export CXX=g++
 }
-
 
 function unSetting()
 {
@@ -139,7 +137,6 @@ function unSetting()
     unset CXX
     unset CXXFLAGS
 }
-
 
 
 # enable programmable completion features (you don't need to enable

@@ -54,7 +54,7 @@ plugins=(git)
 # User configuration
 
   export PATH="/home/ehz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,12 +127,14 @@ export CXX=clang++
 export CXXFLAGS="-ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -Wbind-to-temporary-copy -fdiagnostics-print-source-range-info -fdiagnostics-show-template-tree -ferror-limit=33 -ftemplate-backtrace-limit=13 -lpthread -l:libmagic.so.1"
 }
 
-
 function defaultSetting()
 {
-#
+# default setting
 export CC=gcc
 export CXX=g++
+unset CFLAGS
+unset LDLIBS
+unset CXXFLAGS
 }
 
 function unSetting()
@@ -145,8 +147,8 @@ function unSetting()
 }
 
 
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 
 # color for vim script
