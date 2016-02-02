@@ -151,3 +151,6 @@ fi
 if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
     export TERM=xterm-256color
 fi
+
+OCLINT_HOME="/home/shelter/.oclint/build/oclint-0.10.2/"
+export PATH=$OCLINT_HOME/bin:$PATH
