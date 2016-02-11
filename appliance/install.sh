@@ -39,7 +39,7 @@ cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
 cp npmrc ~/.npmrc
 
-" sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
+# sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
 
 sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
 
