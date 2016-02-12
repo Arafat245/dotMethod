@@ -39,8 +39,13 @@ cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
 cp npmrc ~/.npmrc
 
-# sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
+if [ -d "/usr/share/xfce4/terminal/" ]
+then
+sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
 
 sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
+else
+	echo " Sorry you are not using xfce"
+fi
 
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
