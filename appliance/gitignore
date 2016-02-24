@@ -3,19 +3,36 @@ node_module
 .DS_Store
 Thumbs.db
 
-# C/C++
+# Compiled Object files
 *.slo
 *.lo
 *.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
 *.so
 *.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
 *.lai
 *.la
+*.a
 *.lib
-*.dll
+
+# Executables
 *.exe
 *.out
 *.app
+
+# CMAKEfile ignores
 install_manifest.txt
 CMakeCache.txt
 CMakeFiles
