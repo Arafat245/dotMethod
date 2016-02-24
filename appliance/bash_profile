@@ -3,15 +3,22 @@ source ~/.profile
 # alias for clang toolchain
 # Make sure to run mkdir     "${HOME}/.npm-packages"
 
+# useful for code style
+# CPPLINT is powered by Google
+# pip3 install --user cpplint
+# pip3 install --user cppman
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
 
-
+# SAmple command
+ # clang-check -analyze hell.cpp --
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+
 
 alias asshole='unSetting ; defaultSetting'
 alias mysql='mysql -u root -p'

@@ -38,6 +38,7 @@ cp clang-format ~/.clang-format
 cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
 cp npmrc ~/.npmrc
+cp json-compilation-databse ~/.json-compilation-databse
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
