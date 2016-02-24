@@ -52,4 +52,9 @@ else
     echo " Sorry you are not using xfce"
 fi
 
+
+ln -fs .dotMethod/appliance/bash_profile .bash_profile
+ln -fs .dotMethod/appliance/bashrc .bashrc
+ln -fs .dotMethod/appliance/tmux.conf ~/.tmux.conf
+
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
