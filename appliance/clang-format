@@ -1,6 +1,26 @@
 
 # Defines the WebKit style for automatic reformatting.
 # http://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# LLVM A style complying with the LLVM coding standards
+# Google A style complying with Google’s C++ style guide
+# Chromium A style complying with Chromium’s style guide
+# Mozilla A style complying with Mozilla’s style guide
+# WebKit A style complying with WebKit’s style guide
+
 BasedOnStyle: WebKit
 
+Language: Cpp
 Standard: Cpp11
+
+# Force pointers to the type for C++.
+DerivePointerAlignment: false
+PointerAlignment: Left
+---
+Language: JavaScript
+# Use 100 columns for JS.
+ColumnLimit: 100
+---
+Language: Proto
+# Don't format .proto files.
+DisableFormat: true
+...
