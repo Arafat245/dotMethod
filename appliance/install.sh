@@ -28,7 +28,7 @@ cp bashrc ~/.bashrc
 cp bash_profile ~/.bash_profile
 cp git-completion.bash ~/.git-completion.bash
 cp gvimrc ~/.gvimrc
-cp gitignore ~/.gitignore
+cp gitignore_global ~/.gitignore_global
 cp gitconfig ~/.gitconfig
 cp jscsrc  ~/.jscsrc
 cp jslintrc ~/.jslintrc

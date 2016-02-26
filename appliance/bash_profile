@@ -58,12 +58,12 @@ alias c="clear"
 
 # Updating process
 alias update='sudo apt-get update'
-# alias upgrade='sudo apt-get upgrade'
+alias upgrade='sudo apt-get upgrade'
 # alias dist-upgrade='sudo apt-get dist-upgrade'
 
 # all at once
-# alias pullall='update ; upgrade'
-# alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
+alias pullall='update ; upgrade'
+alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
 
 # git command aliases
 alias gita="git add"
