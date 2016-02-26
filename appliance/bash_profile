@@ -66,12 +66,12 @@ alias pullall='update ; upgrade'
 alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
 
 # git command aliases
-alias gita="git add"
-alias gitc="git commit"
-alias gits="git status"
-alias gitl="git log"
-alias gitush="git push origin master"
-alias gitull="git pull origin master"
+alias Gadd="git add"
+alias Gcommit="git commit"
+alias Gstatus="git status"
+alias Glog="git log"
+alias Gpush="git push origin master"
+alias Gpull="git pull origin master"
 
 # custom configuration
 
