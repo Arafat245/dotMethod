@@ -40,6 +40,7 @@ cp inputrc ~/.inputrc
 cp npmrc ~/.npmrc
 cp json-compilation-databse ~/.json-compilation-databse
 
+mkdir -p ~/.npm-packages
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "prefix I for installing tmux plugin"
@@ -53,9 +54,9 @@ else
     echo " Sorry you are not using xfce"
 fi
 
-
-ln -fs .dotMethod/appliance/bash_profile .bash_profile
-ln -fs .dotMethod/appliance/bashrc .bashrc
+ln -fs .dotMethod/appliance/gitignore_global  ~/.gitignore_global
+ln -fs .dotMethod/appliance/bash_profile ~/.bash_profile
+ln -fs .dotMethod/appliance/bashrc ~/.bashrc
 ln -fs .dotMethod/appliance/tmux.conf ~/.tmux.conf
 
 echo -e "\[\e[1;32m\]Everything succesfully installed.\[\e[0m\]"
