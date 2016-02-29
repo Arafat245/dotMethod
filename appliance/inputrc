@@ -15,7 +15,7 @@ set mark-symlinked-directories on
 # Vim-like menu-complete (set wildmode=list:full wildchar=<Tab>)
 # set show-all-if-unmodified Off
 set menu-complete-display-prefix Off
-Tab:      menu-complete
+# Tab:      menu-complete
 
 # ctrl left, ctrl right for moving on the readline by word
 "\e[1;5C": forward-word
