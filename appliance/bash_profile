@@ -8,6 +8,9 @@ source ~/.profile
 # pip3 install --user cpplint
 # pip3 install --user cppman
 
+# to update npm
+# npm install npm -g
+
 NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
