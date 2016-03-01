@@ -68,6 +68,7 @@ alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
 # git command aliases
 alias Gadd="git add"
 alias Gdiff="git diff"
+alias Gshow="git show"
 alias Gcommit="git commit"
 alias Gstatus="git status"
 alias Glog="git log"
