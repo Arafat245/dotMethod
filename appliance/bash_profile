@@ -8,9 +8,10 @@ source ~/.profile
 # pip3 install --user cpplint
 # pip3 install --user cppman
 
-# to update npm
-# npm install npm -g
+# fucking shit
+stty -ixon
 
+# to update npm
 NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"

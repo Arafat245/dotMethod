@@ -261,3 +261,9 @@ set blink-matching-paren on
 # Make sure to make .virtualenvs
 
 export PIP_VIRTUALENV_BASE=/home/ehz/.virtualenvs
+
+
+# fucking shit
+stty -ixon
+
+# to update npm
