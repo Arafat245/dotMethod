@@ -39,6 +39,7 @@ cp tmux.conf ~/.tmux.conf
 cp inputrc ~/.inputrc
 cp npmrc ~/.npmrc
 cp json-compilation-databse ~/.json-compilation-databse
+cp tern-project ~/.tern-project
 
 mkdir -p ~/.npm-packages
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
