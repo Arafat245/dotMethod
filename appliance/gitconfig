@@ -1,11 +1,15 @@
 [user]
-	email = emrulhasanzawad@outlook.com
-	name = ehzShelter
+    email = emrulhasanzawad@outlook.com
+    name = ehzShelter
 [push]
-	default = simple
+    default = simple
 [core]
     editor = vim
     whitespace = off
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 [color]
     ui = true
+[github]
+    user = ehzShelter
+[credential]
+    helper = wincred
