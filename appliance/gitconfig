@@ -11,3 +11,5 @@
     ui = true
 [github]
     user = ehzShelter
+[credential]
+	helper = cache
