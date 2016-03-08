@@ -12,4 +12,4 @@
 [github]
     user = ehzShelter
 [credential]
-	helper = cache
+    helper = cache
