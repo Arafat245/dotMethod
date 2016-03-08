@@ -51,7 +51,7 @@ alias sag="sudo apt-get"
 alias update50="pullall"
 
 # my nootbook
-alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
+alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.md"
 
 # My aliases
 alias sqlite="sqlite3"
