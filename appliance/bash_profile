@@ -22,7 +22,8 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-
+alias analyzeCC='clang++ --analyze -std=c++14 -stdlib=libc++ -Xanalyzer -analyzer-output=text'
+alias analyzeC='clang --analyze -std=c11 -Xanalyzer -analyzer-output=text'
 
 alias asshole='unSetting ; defaultSetting'
 alias mysql='mysql -u root -p'
@@ -50,7 +51,7 @@ alias sag="sudo apt-get"
 alias update50="pullall"
 
 # my nootbook
-alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.txt"
+alias ehz="vim ~/Dropbox/FUNProgramming/ehz_notebook/ehzNOTEBOOK.md"
 
 # My aliases
 alias sqlite="sqlite3"

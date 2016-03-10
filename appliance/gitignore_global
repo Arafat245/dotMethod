@@ -8,6 +8,8 @@ Thumbs.db
 *.lo
 *.o
 *.obj
+*.session.vim
+*.plist
 
 # Precompiled Headers
 *.gch

@@ -179,4 +179,5 @@ export WORKON_HOME=/home/ehz/.virtualenvs
 export PIP_VIRTUALENV_BASE=/home/ehz/.virtualenvs
 
 
-
+# for Laravel
+export PATH="$PATH:$HOME/.composer/vendor/bin"
