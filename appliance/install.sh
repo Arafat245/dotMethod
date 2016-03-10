@@ -63,7 +63,7 @@ echo "prefix I for installing tmux plugin"
 
 if [ -d /usr/share/xfce4/terminal/colorschemes ]
 then
-    sudo cp Smyck.theme /usr/share/xfce4/terminal/colorschemes/
+    sudo cp ~/.dotMethod/appliance/Smyck.theme /usr/share/xfce4/terminal/colorschemes/
 
     sudo chmod a+r /usr/share/xfce4/terminal/colorschemes/Smyck.theme
 else
