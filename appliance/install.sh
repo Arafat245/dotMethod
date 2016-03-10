@@ -27,27 +27,27 @@ fi
 git clone https://github.com/ehzShelter/dotMethod.git ~/.dotMethod
 echo Downloaded
 
-cd ~/.dotMethod/appliance/
+# cd ~/.dotMethod/appliance/
 
 echo symbolic linking all dot file
+echo "make sure all packages or dependencies are installed"
 
-ln -fs .dotMethod/appliance/git-completion.bash ~/.git-completion.bash
-ln -fs .dotMethod/appliance/gvimrc ~/.gvimrc
-ln -fs .dotMethod/appliance/gitconfig ~/.gitconfig
-ln -fs .dotMethod/appliance/jscsrc  ~/.jscsrc
-ln -fs .dotMethod/appliance/jslintrc ~/.jslintrc
-ln -fs .dotMethod/appliance/jshintrc ~/.jshintrc
-ln -fs .dotMethod/appliance/profile ~/.profile
-ln -fs .dotMethod/appliance/clang-format ~/.clang-format
-ln -fs .dotMethod/appliance/tmux.conf ~/.tmux.conf
-ln -fs .dotMethod/appliance/inputrc ~/.inputrc
-ln -fs .dotMethod/appliance/npmrc ~/.npmrc
-ln -fs .dotMethod/appliance/json-compilation-databse ~/.json-compilation-databse
-ln -fs .dotMethod/appliance/tern-project ~/.tern-project
-ln -fs .dotMethod/appliance/gitignore_global  ~/.gitignore_global
-ln -fs .dotMethod/appliance/bash_profile ~/.bash_profile
-ln -fs .dotMethod/appliance/bashrc ~/.bashrc
-ln -fs .dotMethod/appliance/tmux.conf ~/.tmux.conf
+ln -fs ~/.dotMethod/appliance/git-completion.bash ~/.git-completion.bash
+ln -fs ~/.dotMethod/appliance/gvimrc ~/.gvimrc
+ln -fs ~/.dotMethod/appliance/gitconfig ~/.gitconfig
+ln -fs ~/.dotMethod/appliance/jscsrc  ~/.jscsrc
+ln -fs ~/.dotMethod/appliance/profile ~/.profile
+ln -fs ~/.dotMethod/appliance/clang-format ~/.clang-format
+ln -fs ~/.dotMethod/appliance/tmux.conf ~/.tmux.conf
+ln -fs ~/.dotMethod/appliance/inputrc ~/.inputrc
+ln -fs ~/.dotMethod/appliance/npmrc ~/.npmrc
+ln -fs ~/.dotMethod/appliance/json-compilation-databse ~/.json-compilation-databse
+ln -fs ~/.dotMethod/appliance/tern-project ~/.tern-project
+ln -fs ~/.dotMethod/appliance/gitignore_global  ~/.gitignore_global
+ln -fs ~/.dotMethod/appliance/bash_profile ~/.bash_profile
+ln -fs ~/.dotMethod/appliance/bashrc ~/.bashrc
+ln -fs ~/.dotMethod/appliance/tmux.conf ~/.tmux.conf
+ln -fs ~/.dotMethod/appliance/eslintrc ~/.eslintrc
 
 mkdir -p ~/.npm-packages
 
