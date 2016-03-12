@@ -11,17 +11,20 @@ source ~/.profile
 # fucking shit
 stty -ixon
 
+# touch .npmrc
+# for more see my .npmrc file
+# don't use nvm if you use this approach otherwise it will messed up
 # to update npm
 NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
 
-# SAmple command
- # clang-check -analyze hell.cpp --
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
+# SAmple command
+# clang-check -analyze hell.cpp --
 alias analyzeCC='clang++ --analyze -std=c++14 -stdlib=libc++ -Xanalyzer -analyzer-output=text'
 alias analyzeC='clang --analyze -std=c11 -Xanalyzer -analyzer-output=text'
 
