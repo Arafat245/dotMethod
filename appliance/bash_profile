@@ -28,6 +28,9 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 alias analyzeCC='clang++ --analyze -std=c++14 -stdlib=libc++ -Xanalyzer -analyzer-output=text'
 alias analyzeC='clang --analyze -std=c11 -Xanalyzer -analyzer-output=text'
 
+# valgrind check added
+alias valgrindC='valgrind --leak-check=full --show-reachable=yes --track-origins=yes'
+
 alias asshole='unSetting ; defaultSetting'
 alias mysql='mysql -u root -p'
 
