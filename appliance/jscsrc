@@ -1,7 +1,7 @@
 {
     "preset": "google",
     "fileExtensions": [".js", "jscs"],
-
+    "esprima": "esprima-fb",
     "requireSemicolons": true,
     "requireParenthesesAroundIIFE": true,
     "maximumLineLength": 120,
