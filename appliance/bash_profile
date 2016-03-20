@@ -186,12 +186,12 @@ function myDropbox()
 }
 
 # open your home directory
-function myHome()
+function ho()
 {
     exo-open --launch FileManager
 }
 
-function myTe()
+function tl()
 {
     exo-open --launch TerminalEmulator
 }
