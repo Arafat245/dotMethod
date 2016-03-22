@@ -1,7 +1,7 @@
 [
 {
 "directory": "$HOME",
-  "command": "/usr/bin/clang++ -stdlib=libc++ -std=c++1y -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -lpthread",
+  "command": "/usr/bin/clang++ -stdlib=libc++ -std=c++11 -lc++abi -Werror -Wself-assign -Wall -pedantic-errors -Wextra-tokens -Wambiguous-member-template -lpthread",
   "file": "~/file.cpp"
 }
 ]
