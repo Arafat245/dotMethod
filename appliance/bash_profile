@@ -194,3 +194,7 @@ function tl()
 {
     exo-open --launch TerminalEmulator
 }
+
+#ASAN (address sanitize)
+alias asanC='clang -ggdb3 -O0 -std=c11 -fsanitize=address -lpthread'
+alias asanCC='clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -fsanitize=address -lpthread'
