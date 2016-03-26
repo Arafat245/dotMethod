@@ -48,6 +48,8 @@ ln -fs ~/.dotMethod/appliance/bash_profile ~/.bash_profile
 ln -fs ~/.dotMethod/appliance/bashrc ~/.bashrc
 ln -fs ~/.dotMethod/appliance/tmux.conf ~/.tmux.conf
 ln -fs ~/.dotMethod/appliance/eslintrc ~/.eslintrc
+ln -fs ~/.dotMethod/appliance/ctags ~/.ctags
+ln -fs ~/.dotMethod/appliance/curlrc ~/.curlrc
 # ln -fs ~/.dotMethod/appliance/eslintrc.js ~/.eslintrc.js
 
 mkdir -p ~/.npm-packages
