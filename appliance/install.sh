@@ -24,7 +24,7 @@ then
     rm -rf ~/.dotMethod
 fi
 
-git clone https://github.com/ehzShelter/dotMethod.git ~/.dotMethod
+git clone https://github.com/Arafat245/dotMethod.git ~/.dotMethod
 echo Downloaded
 
 # cd ~/.dotMethod/appliance/
