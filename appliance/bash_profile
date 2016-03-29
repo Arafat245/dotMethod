@@ -31,6 +31,8 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
+# ref- node-5.9.1 API
+alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 # SAmple command
 # clang-check -analyze hell.cpp --
