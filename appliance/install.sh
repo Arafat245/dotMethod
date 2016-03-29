@@ -52,7 +52,7 @@ ln -fs ~/.dotMethod/appliance/ctags ~/.ctags
 ln -fs ~/.dotMethod/appliance/curlrc ~/.curlrc
 # ln -fs ~/.dotMethod/appliance/eslintrc.js ~/.eslintrc.js
 
-mkdir -p ~/.npm-packages
+# mkdir -p ~/.npm-global
 
 if [ -d ~/.tmux/plugins ]
 then
