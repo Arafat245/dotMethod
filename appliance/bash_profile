@@ -9,6 +9,10 @@ source ~/.profile
 # to see your current path
 # npm config get prefix
 
+# be sure to install dependencies first
+# sometimes you need to install webpack from ~/.npm-global/ directories
+# npm install -g babel webpack webpack-dev-server
+
 # useful for code style
 # pip3 install --user cppman
 
