@@ -82,8 +82,8 @@ alias upgrade='sudo apt-get upgrade'
 
 # all at once
 alias pullall='update ; upgrade'
-alias pullvim='vim -c PluginInstall!'
-alias myUpdate='pullall ; vim -c PluginInstall! +q +q'
+alias pullvim='vim -c PlugUpdate'
+alias myUpdate='pullall ; vim -c PlugInstall! +q +q'
 alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
 
 # git command aliases
@@ -93,8 +93,9 @@ alias Gshow="git show"
 alias Gcommit="git commit"
 alias Gstatus="git status"
 alias Glog="git log"
-alias Gpush="git push origin master"
-alias Gpull="git pull origin master"
+alias Gpush="git push"
+alias Gpull="git pull"
+alias Gstash="git stash"
 
 # custom configuration
 
