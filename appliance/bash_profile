@@ -95,6 +95,7 @@ alias Gstatus="git status"
 alias Glog="git log"
 alias Gpush="git push"
 alias Gpull="git pull"
+alias Gstash="git stash"
 
 # custom configuration
 
