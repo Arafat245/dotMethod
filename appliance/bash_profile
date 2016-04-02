@@ -99,6 +99,7 @@ alias Gpush="git push"
 alias Gpull="git pull"
 alias Gstash="git stash"
 
+
 # custom configuration
 
 # If not running interactively, don't do anything else
@@ -208,6 +209,13 @@ function tl()
 {
     exo-open --launch TerminalEmulator
 }
+
+# sync with master branch
+function gpum()
+{
+   git pull upstream master
+}
+
 
 #ASAN (address sanitize)
 alias asanC='clang -ggdb3 -O0 -std=c11 -fsanitize=address -lpthread'
