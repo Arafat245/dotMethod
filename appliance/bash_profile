@@ -220,3 +220,7 @@ function gpum()
 #ASAN (address sanitize)
 alias asanC='clang -ggdb3 -O0 -std=c11 -fsanitize=address -lpthread'
 alias asanCC='clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -fsanitize=address -lpthread'
+
+
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
