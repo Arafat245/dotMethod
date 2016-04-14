@@ -1,11 +1,19 @@
 source ~/.profile
 
 # alias for clang toolchain
-# Make sure to run mkdir     "${HOME}/.npm-packages"
+
+# for npm
+# Make sure to run
+# mkdir "${HOME}/.npm-global"
+# npm config set prefix '~/.npm-global'
+# to see your current path
+# npm config get prefix
+
+# be sure to install dependencies first
+# sometimes you need to install webpack from ~/.npm-global/ directories
+# npm install -g babel webpack webpack-dev-server
 
 # useful for code style
-# CPPLINT is powered by Google
-# pip3 install --user cpplint
 # pip3 install --user cppman
 
 # fucking shit
@@ -15,13 +23,16 @@ stty -ixon
 # for more see my .npmrc file
 # don't use nvm if you use this approach otherwise it will messed up
 # to update npm
-NPM_PACKAGES="${HOME}/.npm-packages"
+NPM_PACKAGES="${HOME}/.npm-global"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+# ref- node-5.9.1 API
+alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 # SAmple command
 # clang-check -analyze hell.cpp --
@@ -73,8 +84,8 @@ alias upgrade='sudo apt-get upgrade'
 
 # all at once
 alias pullall='update ; upgrade'
-alias pullvim='vim -c PluginInstall!'
-alias myUpdate='pullall ; vim -c PluginInstall! +q +q'
+alias pullvim='vim -c PlugUpgrade +PlugUpdate'
+alias myUpdate='pullall -y ; vim -c PlugUpdate +q +q'
 alias housekeeping='sudo apt-get autoclean && sudo apt-get autoremove'
 
 # git command aliases
@@ -84,8 +95,10 @@ alias Gshow="git show"
 alias Gcommit="git commit"
 alias Gstatus="git status"
 alias Glog="git log"
-alias Gpush="git push origin master"
-alias Gpull="git pull origin master"
+alias Gpush="git push"
+alias Gpull="git pull"
+alias Gstash="git stash"
+
 
 # custom configuration
 
@@ -197,6 +210,17 @@ function tl()
     exo-open --launch TerminalEmulator
 }
 
+# sync with master branch
+function gpum()
+{
+   git pull upstream master
+}
+
+
 #ASAN (address sanitize)
 alias asanC='clang -ggdb3 -O0 -std=c11 -fsanitize=address -lpthread'
 alias asanCC='clang++ -ggdb3 -O0 -std=c++14 -stdlib=libc++ -lc++abi -fsanitize=address -lpthread'
+
+
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
